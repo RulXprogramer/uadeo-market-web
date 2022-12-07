@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button'
 import { TemplateModule } from './template/template.module';
 import { FooterModule } from "./template/components/footer/footer.module";
+import { GraphqlModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -19,7 +21,9 @@ import { FooterModule } from "./template/components/footer/footer.module";
         BrowserAnimationsModule,
         MatButtonModule,
         TemplateModule,
-        FooterModule
+        FooterModule,
+        GraphqlModule,
+        HttpClientModule
     ]
 })
 export class AppModule { }

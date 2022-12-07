@@ -1,0 +1,18 @@
+<h1>Productos</h1>
+
+<button mat-raised-button color="warn" (click)="add()">Agregar Nota</button>
+
+<dx-data-grid
+    id="gridContainer"
+    [dataSource]="products"
+    [columns]="columns"
+    [showBorders]="true">
+
+    <dxo-search-panel
+        [visible]="true"
+        [highlightCaseSensitive]="true"
+    ></dxo-search-panel>
+
+    <dxo-sorting mode="multiple"></dxo-sorting>
+    <!-- <dxo-export [enabled]="true" [allowExportSelectedData]="true"></dxo-export> -->
+</dx-data-grid>

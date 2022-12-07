@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-sidemenu',
@@ -8,23 +9,7 @@ import { Router } from '@angular/router';
 })
 export class SidemenuComponent {
 
-  menus = [
-    {
-      name: 'Inicio',
-      path: '',
-      icon: 'home',
-    },
-    {
-      name: 'Perfil',
-      path: 'profile',
-      icon: 'person',
-    },
-    {
-      name: 'Admin',
-      path: 'admin',
-      icon: 'manage_accounts',
-    },
-  ]
+  menus = environment.menus;
 
   constructor(private router: Router){}
 

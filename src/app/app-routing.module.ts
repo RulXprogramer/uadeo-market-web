@@ -14,6 +14,10 @@ const routes: Routes = [
     component: ProfileComponent,
   },
   {
+    path: 'products',
+    loadChildren: () => import('./components/products/products.module').then(m => m.ProductsModule),
+  },
+  {
     path: 'admin',
     component: AdminComponent,
   }
